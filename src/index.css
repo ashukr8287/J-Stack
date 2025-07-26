@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+
+/* nprogress-custom.css */
+#nprogress .bar {
+  background: white !important;
+  height: 6px;
+}
+
+#nprogress .spinner {
+  display: none !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+/* 1. Entire scrollbar */
+.DemandJobs::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+
+.DemandJobs::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+
+.DemandJobs::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+
+.DemandJobs::-webkit-scrollbar-thumb:hover {
+  background: #555555d6
+}
+
+.heroimage {
+  max-width: 100%;
+  height: auto;
+  animation: swipeanimation 3s ease-in-out infinite;
+}
+
+@keyframes swipeanimation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width:650px) {
+  .DemandJobs::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+  }
+
+}
