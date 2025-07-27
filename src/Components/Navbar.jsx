@@ -33,7 +33,7 @@ function Navbar() {
               <NavLink to="/contact">Contact</NavLink>
             </li>
             <li>
-              <NavLink to="/">Join</NavLink>
+              <NavLink to="/404">Join</NavLink>
             </li>
           </ul>
 
@@ -81,7 +81,7 @@ function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/404"
               onClick={() => setToggle(false)}
               className={" w-full pr-35"}
             >

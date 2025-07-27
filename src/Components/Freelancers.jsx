@@ -17,7 +17,7 @@ function Freelancers() {
           <div className="text-center  px-4 py-6 rounded-xl hover:shadow-lg">
             <img src={fl1} alt="" className="w-15 m-auto rounded-full" />
             <h4 className="font-semibold text-lg my-2">Robert Fox</h4>
-             <button className=" text-sm bg-green-400 px-2 py-1.5 rounded-full text-white hover:bg-green-500">
+            <button className=" text-sm bg-green-400 px-2 py-1.5 rounded-full text-white hover:bg-green-500">
               View Profile
             </button>
           </div>
@@ -25,7 +25,7 @@ function Freelancers() {
           <div className="text-center   px-4 py-6 rounded-xl hover:shadow-lg">
             <img src={fl2} alt="" className="w-15 m-auto rounded-full" />
             <h4 className="font-semibold text-lg my-2">Kristin Watson</h4>
-             <button className=" text-sm bg-green-400 px-2 py-1.5 rounded-full text-white hover:bg-green-500">
+            <button className=" text-sm bg-green-400 px-2 py-1.5 rounded-full text-white hover:bg-green-500">
               View Profile
             </button>
           </div>
@@ -33,7 +33,7 @@ function Freelancers() {
           <div className="text-center   px-4 py-6 rounded-xl hover:shadow-lg">
             <img src={fl3} alt="" className="w-15 m-auto rounded-full" />
             <h4 className="font-semibold text-lg my-2">Darrell Steward</h4>
-             <button className=" text-sm bg-green-400 px-2 py-1.5 rounded-full text-white hover:bg-green-500">
+            <button className=" text-sm bg-green-400 px-2 py-1.5 rounded-full text-white hover:bg-green-500">
               View Profile
             </button>
           </div>

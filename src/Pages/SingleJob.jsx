@@ -1,13 +1,22 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import JobsData from "../utils/JobsData.js";
 
 function SingleJob() {
- useEffect(()=>{
+  let navigate = useNavigate();
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, []);
   const { id } = useParams();
   const Singlejob = JobsData.find((job) => job.jobId === id);
+  useEffect(() => {
+    if (!Singlejob) {
+      navigate("/404");
+    }
+  }, [Singlejob, navigate]);
+
+  if (!Singlejob) return null;
+
   return (
     <section className="w-full bg-white">
       <div className=" max-w-[1350px] m-auto md:py-15 py-8 px-5 md:px-10">

@@ -3,9 +3,8 @@ import hero from "../assets/hero.png";
 import { NavLink } from "react-router-dom";
 import { AuthData } from "../Context/ContextApi";
 function HeroSection() {
-  let {setinpData}=useContext(AuthData)
-  let [inpvalue,setinpvalue]=useState("")
-
+  let { setinpData } = useContext(AuthData);
+  let [inpvalue, setinpvalue] = useState("");
 
   return (
     <section className="bg-[#1E4D42] w-full">
@@ -23,10 +22,20 @@ function HeroSection() {
             <input
               type="text"
               placeholder="Search services..."
-              onChange={(e)=>{setinpvalue(e.target.value)}}
+              onChange={(e) => {
+                setinpvalue(e.target.value);
+              }}
               className="px-4 py-2 w-full text-black outline-none"
             />
-            <NavLink to="/jobs" className="bg-[#3FAF7D] text-white px-6 py-2 rounded-md hover:bg-[#329e6d] transition" onClick={()=>{setinpData(inpvalue)}}>Search</NavLink>
+            <NavLink
+              to="/jobs"
+              className="bg-[#3FAF7D] text-white px-6 py-2 rounded-md hover:bg-[#329e6d] transition"
+              onClick={() => {
+                setinpData(inpvalue);
+              }}
+            >
+              Search
+            </NavLink>
           </div>
         </div>
         {/* right side */}
